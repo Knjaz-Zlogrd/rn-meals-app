@@ -1,10 +1,13 @@
 import React from "react";
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, Button } from 'react-native';
 
 const CategoriyMealsScreen = props => {
   return (
     <View style={styles.screen}>
       <Text>The Categorey Meals Screen!</Text>
+      <Button title="Go to Details!" onPress={() => {
+        props.navigation.navigate({routeName: 'MealDetail'});
+      }} />
     </View>
   );
 };
