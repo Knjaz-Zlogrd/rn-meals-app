@@ -11,7 +11,10 @@ const CategoriesScreen = props => {
       style={styles.gridItem}
         onPress={() => {
           props.navigation.navigate({
-            routeName: 'CategoryMeals'
+            routeName: 'CategoryMeals',
+            params: {
+              categoryId: itemData.item.id
+            }
           });
         }}
       >
