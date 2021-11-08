@@ -21,6 +21,7 @@ const MealItem = props => {
         </View>
       </TouchableOpacity>
     </View>
+
   );
 };
 
@@ -28,15 +29,14 @@ const styles = StyleSheet.create({
   mealItem: {
     height: 200,
     width: '100%',
-    backgroundColor: '#f5f5f5',
+    backgroundColor: '#d6d4d4',
     borderRadius: 10,
     overflow: 'hidden',
-    padding: 5
   },
   bgImage: {
     width: '100%',
     height: '100%',
-    justifyContent: 'flex-end'
+    justifyContent: 'flex-end',
   },
   mealRow: {
     flexDirection: 'row'
