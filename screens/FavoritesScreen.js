@@ -7,7 +7,7 @@ import { useSelector } from "react-redux";
 import MealList from "../components/MealList";
 
 const FavoritesScreen = props => {
-  const favMeals = useSelector(state => state.meals.meals)
+  const favMeals = useSelector(state => state.meals.favoriteMeals)
 
   //const favMeals = MEALS.filter(meal => meal.id === 'm1' || meal.id === 'm2'); //will replace this logic
   return (
